@@ -1,0 +1,116 @@
+div.heading {
+  width: 80%;
+  margin: 10px auto; 
+}
+
+div.heading h1 {
+  border-bottom: solid 5px black;
+}
+
+div.box {
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 80%;
+  border-top: solid 5px rgba(100, 100, 100, 0.5);
+  border-bottom: solid 5px rgba(100, 100, 100, 0.5);
+}
+
+div.group a {
+  margin: auto;
+  border-left: solid 5px black;
+  padding-left: 5px;
+}
+
+div.name {
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: solid 3px rgba(204, 204, 204, 0.5)
+}
+
+div.name p {
+  font-size: xx-large;
+  margin: 10px 0;
+}
+
+div.name p.page {
+  font-size: medium;
+  margin-left: auto;
+}
+
+/* div.noIconParent {
+  position: relative;
+  width: 10%;
+} */
+
+div.noIcon:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+div.noIcon {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  width: 10%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 50%;
+  border: solid 3px rgba(204, 204, 204, 0.5);
+  background-color: rgba(204, 204, 204, 0.5);
+  align-self: flex-start;
+  }
+
+img.icon {
+  width: 10%;
+  height: auto;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 50%;
+  border: solid 3px rgba(204, 204, 204, 0.5);
+  align-self: flex-start;
+}
+
+div.sns {
+  display: flex;
+  padding: 20px 0;
+}
+
+div.sns a {
+  width: 20%;
+}
+
+a.noLink {
+  pointer-events: none;
+}
+
+img.snsImage {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 960px) { 
+  /* パソコン用のデザイン */
+  div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  div.box {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%
+  }
+
+  div.heading {
+    width: 100%;
+  }
+}
